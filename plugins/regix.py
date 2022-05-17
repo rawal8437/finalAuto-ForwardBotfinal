@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @DarkzzAngel
+# (c) @Jeolpaul
 
 import os
 import sys
@@ -25,7 +25,7 @@ async def pub_(bot, message):
         await message.message.reply_text('__Previous process running 🥺..__', parse_mode="md")
     else:
         m = await message.message.reply_text(
-            text="<i>Processing...⏳</i>"
+            text="<i>Processing...🔄</i>"
         )
         total_files=0
         async with lock:
@@ -84,9 +84,9 @@ async def pub_(bot, message):
                 await m.edit_text(f'Error: {e}')
             else:
                 buttons = [[
-                    InlineKeyboardButton('📜 Support Group', url='https://t.me/DxHelpDesk')
+                    InlineKeyboardButton('📜 Support Group', url='https://t.me/BETA_BOTSUPPORT')
                     ],[
-                    InlineKeyboardButton('📡 Update Channel', url='https://t.me/DX_Botz')
+                    InlineKeyboardButton('📡 Update Channel', url='https://t.me/BETA_UPDATES')
                 ]]
                 reply_markup = InlineKeyboardMarkup(buttons)
                 await m.edit_text(
