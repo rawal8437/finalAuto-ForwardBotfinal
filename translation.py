@@ -3,7 +3,7 @@ from config import Config
 
 class Translation(object):
   START_TXT = """<b>Hai {}!!</b>
-<i>I'm Simple Auto file Forward Bot V2
+<i>I'm Simple Auto file Forward Bot From Beta Botz
 This Bot forward all files to One Public channel to Your Personal channel
 More details /help</i>"""
   CAPTION = "`{}`\n\n" + str(Config.CAPTION)
