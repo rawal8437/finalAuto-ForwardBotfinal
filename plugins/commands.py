@@ -18,8 +18,7 @@ async def start(client, message):
         InlineKeyboardButton('📜 Support Group', url='https://t.me/BETA_BOTSUPPORT'),
         InlineKeyboardButton('Update Channel 📣', url='https://t.me/BETA_UPDATES')
         ],[
-        InlineKeyboardButton('💡 SouceCode', url='https://github.com/Jeolpaul/Auto-Forward-Bot'),
-        InlineKeyboardButton('DEVELOPER👨🏻‍💻', url ='https://t.me/JP_Jeol')
+        InlineKeyboardButton('help', callback_data = 'help')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -31,13 +30,9 @@ async def start(client, message):
 
 #===================Help Function===================#
 
-@Client.on_message(filters.private & filters.command(['help']))
-async def help(client, message):
-    buttons = [[
-        InlineKeyboardButton('SouceCode 💡', url='https://github.com/Jeolpaul/Auto-Forward-Bot'),
-        InlineKeyboardButton('close 🔐', callback_data='close_btn')
-    ]]
-    reply_markup = InlineKeyboardMarkup(buttons)
+@Client.on_callback_query()
+async def cb_handler(client: Client, query: CallbackQuery):
+    if query.data == "help":
     await client.send_message(
         chat_id=message.chat.id,
         reply_markup=reply_markup,
@@ -49,7 +44,6 @@ async def help(client, message):
 @Client.on_message(filters.private & filters.command(['about']))
 async def about(client, message):
     buttons = [[
-        InlineKeyboardButton('💡 SouceCode', url='https://github.com/Jeolpaul/Auto-Forward-Bot'),
         InlineKeyboardButton('close 🔐', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
