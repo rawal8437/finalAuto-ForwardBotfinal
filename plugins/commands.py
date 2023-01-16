@@ -8,7 +8,7 @@ import asyncio
 from config import Config
 from translation import Translation
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaDocument
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaDocument, CallbackQuery
 
 #===================Start Function===================#
 
