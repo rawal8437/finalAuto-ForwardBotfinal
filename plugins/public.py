@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) @Jeolpaul
-
 import asyncio
 import re
 from pyrogram import Client, filters
