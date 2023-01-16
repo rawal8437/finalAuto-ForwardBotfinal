@@ -35,7 +35,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "help":
         await client.send_message(
             chat_id=query.message.chat.id,
-            reply_markup=reply_markup,
             text=Translation.HELP_TXT,
             parse_mode="html")
 
