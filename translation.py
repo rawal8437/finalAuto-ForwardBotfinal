@@ -3,7 +3,7 @@ from config import Config
 
 class Translation(object):
   START_TXT = """<b>Hai {}!!</b>
-<i>I'm Simple Auto file Forward Bot From Beta Botz
+<i>I'm Simple Auto file Forward Bot 
 This Bot forward all files to One Public channel to Your Personal channel
 More details /help</i>"""
   CAPTION = "`{}`\n\n" + str(Config.CAPTION)
@@ -22,7 +22,6 @@ More details /help</i>"""
   ABOUT_TXT = """<b><u>My Info</b></u>
 
 <b>Name :</b> <code>Auto Forward Bot</code>
-<b>Credit :</b> <code>Dark Angel</code>
 <b>Language :</b> <code>Python3</code>
 <b>Lybrary :</b> <code>Pyrogram v1.2.9</code>
 <b>Server :</b> <code>Heroku</code>
