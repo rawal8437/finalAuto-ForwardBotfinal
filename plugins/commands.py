@@ -31,7 +31,7 @@ async def start(client, message):
 #===================Help Function===================#
 
 @Client.on_callback_query()
-async def cb_handler(client: Client, query: CallbackQuery):
+async def cb_handler(client, message):
     if query.data == "help":
         await client.send_message(
             chat_id=message.chat.id,
