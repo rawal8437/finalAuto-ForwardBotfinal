@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) @DarkzzAngel
-
 import pyromod.listen
 
 from pyrogram import Client, __version__
@@ -24,7 +20,7 @@ class Bot(Client):
             plugins={
                 "root": "plugins"
             },
-            workers=4,
+            workers=200,
             bot_token=Config.BOT_TOKEN
         )
         self.LOGGER = LOGGER
